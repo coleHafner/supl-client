@@ -1,0 +1,12 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/trusty64"
+
+  config.vm.synced_folder "supl/", "/home/vagrant/supl-shared"
+
+  config.provision "general", type: "shell", 
+    inline: "sudo apt-get update && sudo apt-get install git libssl-dev pkg-config"
+
+  config.vm.define "complile"
+    supl.vm.provision "shell", inline: "cd supl-shared && ./configure --precompiled-asn1 && make && sudo make install && cd /usr/lib && sudo ln -s /usr/local/lib/libsupl.so libsupl.so && sudo ln -s /usr/local/lib/libsupl.so.1 libsupl.so.1"
+  end
+end

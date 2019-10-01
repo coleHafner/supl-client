@@ -1,0 +1,3 @@
+[submodule "supl"]
+	path = supl
+	url = https://github.com/coleHafner/supl.git
