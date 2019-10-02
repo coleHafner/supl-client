@@ -12,6 +12,11 @@ git clone https://github.com/coleHafner/supl-client.git
 git submodule init
 git submodule update
 
+# install the complier
+cd supl
+git submodule init
+git submodule update
+
 # build and provision the server, compile the supl client
 vagrant up
 ```
