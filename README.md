@@ -7,6 +7,7 @@ This is a supl client bundled with a server to run it using Vagrant.
 ```sh
 # clone the repo
 git clone https://github.com/coleHafner/supl-client.git
+cd supl-client
 
 # install the submodules
 git submodule init
