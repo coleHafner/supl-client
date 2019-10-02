@@ -1,5 +1,5 @@
 # Supl Client
-This is a supl client bundled with a server to run it using Vagrant. 
+This is a supl client bundled with a server to run it using Vagrant. This is based off [this supl project](https://github.com/tajuma/supl). See [official docs here](https://github.com/colehafner/supl#supl-client). 
 
 ## Getting started
 - Install [vagrant](https://www.vagrantup.com/docs/installation/)
@@ -20,5 +20,7 @@ vagrant up
 ## Testing the SUPL client
 ```sh
 vagrant ssh
-supl-client -t 3 -d supltest.gpstream.net
+
+# supl server url defaults to supl.nokia.com
+supl-client -t 3 -d <supl server url>
 ```
