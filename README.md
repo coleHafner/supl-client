@@ -9,11 +9,11 @@ This is a supl client bundled with a server to run it using Vagrant. This is bas
 git clone https://github.com/coleHafner/supl-client.git
 cd supl-client
 
-# install the submodules
+# install the supl-client repo
 git submodule init
 git submodule update
 
-# install the complier
+# install the complier repo
 cd supl
 git submodule init
 git submodule update
